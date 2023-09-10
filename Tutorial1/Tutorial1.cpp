@@ -76,4 +76,7 @@ int main()
             break;
         }
     } while (ex == false);
+
+    // always remember to return from main!
+    return 0;
 }
