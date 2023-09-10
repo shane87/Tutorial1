@@ -6,12 +6,22 @@
 
 using namespace std;
 
+// main():
+// the entry point for the program
 int main()
 {
+    // declare a few vars to hold our info
+    // start with a control bool
     bool ex = false;
+    // add a few ints for selection control and calc values
     int selection, a, b;
+
+    // start a do...while() loop
+    // this type of loop will ALWAYS run through at least once
+    // it also allows us to change the exit conditions during any loop pass
     do
     {
+        // print our calculator menu
         cout << "Calculator Application" << endl;
         cout << "Available functions:" << endl;
         cout << "1. Addition" << endl;
@@ -22,8 +32,12 @@ int main()
         cout << "6. Exit" << endl;
         cout << "Please select a function: ";
 
+        // get the menu option selected
         cin >> selection;
 
+        // switch on the menu option entered
+        // switch statements work similarly to nested if/ifelse/else statements
+        // but they are a bit easier to read
         switch (selection)
         {
         case 1:
