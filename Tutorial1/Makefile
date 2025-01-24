@@ -6,7 +6,7 @@ OBJS := Tutorial1.o functions.o
 ldcmd := " LD  "
 cxxcmd := " CXX "
 
-ifeq (($DEBUG), yes)
+ifeq ($(DEBUG),yes)
 	CPPFLAGS := $(CPPFLAGS_DEBUG)
 else
 	CPPFLAGS := $(CPPFLAGS_NORMAL)
