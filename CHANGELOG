@@ -1,0 +1,45 @@
+Changelog for Tutorial1 - (cl)2025 Eric Clothier [shane87@github]
+
+Author: Eric Clothier <eric.clothier@gmail.com>
+Date:   Sun Jan 26 15:00:41 2025 -0500
+
+    add CHANGELOG
+    
+    track changes to Tutorial1
+
+Author: Eric Clothier <eric.clothier@gmail.com>
+Date:   Thu Jan 23 21:01:01 2025 -0500
+
+    fix derp in Makefile
+    
+    repair debug build function
+
+Author: Eric Clothier <eric.clothier@gmail.com>
+Date:   Sun Sep 17 12:56:29 2023 -0400
+
+    added Makefile for *nix builds
+
+Author: shane87 <eric.clothier@gmail.com>
+Date:   Sun Sep 10 12:55:08 2023 -0400
+
+    add some documentation!
+
+Author: shane87 <eric.clothier@gmail.com>
+Date:   Sun Sep 10 12:50:29 2023 -0400
+
+    add a return from main
+
+Author: shane87 <eric.clothier@gmail.com>
+Date:   Mon Jun 29 11:49:15 2020 -0400
+
+    Add GNU GPL v2 License and README
+
+Author: shane87 <eric.clothier@gmail.com>
+Date:   Mon Jun 29 11:25:06 2020 -0400
+
+    Add project files.
+
+Author: shane87 <eric.clothier@gmail.com>
+Date:   Mon Jun 29 11:25:02 2020 -0400
+
+    Add .gitignore and .gitattributes.
