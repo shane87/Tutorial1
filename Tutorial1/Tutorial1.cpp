@@ -34,6 +34,15 @@ int main()
 
         // get the menu option selected
         cin >> selection;
+        // test for extraction failure
+        if (clearFailedExtraction())
+        {
+            cout << "Oops! Something wasn't quite right there!" << endl;
+            cout << "Please try again!!" << endl << endl;
+            continue;
+        }
+        // clear any extraneous input
+        ignoreLine();
 
         // switch on the menu option entered
         // switch statements work similarly to nested if/ifelse/else statements
@@ -41,41 +50,71 @@ int main()
         switch (selection)
         {
         case 1:
-            cout << "Please enter first number: ";
-            cin >> a;
-            cout << "Please enter second number: ";
-            cin >> b;
+            do  //wrap inputs in do { ... } while() loops...
+            {
+                cout << "Please enter first number: ";
+                cin >> a;
+            } while (clearFailedExtraction());  //to test for failed extraction!
+            do
+            {
+                cout << "Please enter second number: ";
+                cin >> b;
+            } while (clearFailedExtraction());
             cout << a << " + " << b << " = " << add(a, b) << endl;
             break;
         case 2:
-            cout << "Please enter first number: ";
-            cin >> a;
-            cout << "Please enter second number: ";
-            cin >> b;
+            do  //wrap inputs in do { ... } while() loops...
+            {
+                cout << "Please enter first number: ";
+                cin >> a;
+            } while (clearFailedExtraction());  //to test for failed extraction!
+            do
+            {
+                cout << "Please enter second number: ";
+                cin >> b;
+            } while (clearFailedExtraction());
             cout << a << " - " << b << " = " << subtract(a, b) << endl;
             break;
         case 3:
-            cout << "Please enter first number: ";
-            cin >> a;
-            cout << "Please enter second number: ";
-            cin >> b;
+            do  //wrap inputs in do { ... } while() loops...
+            {
+                cout << "Please enter first number: ";
+                cin >> a;
+            } while (clearFailedExtraction());  //to test for failed extraction!
+            do
+            {
+                cout << "Please enter second number: ";
+                cin >> b;
+            } while (clearFailedExtraction());
             cout << a << " * " << b << " = " << multiply(a, b) << endl;
             break;
         case 4:
-            cout << "Please enter first number: ";
-            cin >> a;
-            cout << "Please enter second number: ";
-            cin >> b;
+            do  //wrap inputs in do { ... } while() loops...
+            {
+                cout << "Please enter first number: ";
+                cin >> a;
+            } while (clearFailedExtraction());  //to test for failed extraction!
+            do
+            {
+                cout << "Please enter second number: ";
+                cin >> b;
+            } while (clearFailedExtraction());
             if (b == 0)
                 cout << "Can't divide by zero!!" << endl;\
             else
                 cout << a << " / " << b << " = " << divide(a, b) << endl;
             break;
         case 5:
-            cout << "Please enter first number: ";
-            cin >> a;
-            cout << "Please enter second number: ";
-            cin >> b;
+            do  //wrap inputs in do { ... } while() loops...
+            {
+                cout << "Please enter first number: ";
+                cin >> a;
+            } while (clearFailedExtraction());  //to test for failed extraction!
+            do
+            {
+                cout << "Please enter second number: ";
+                cin >> b;
+            } while (clearFailedExtraction());
             if (b == 0)
                 cout << "Can't divide by zero!!" << endl; \
             else

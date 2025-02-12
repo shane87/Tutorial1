@@ -15,4 +15,11 @@ int divide(int a, int b);
 
 int modulo(int a, int b);
 //Return modulus of a and b
+
+void ignoreLine();
+//Clear extraneous input
+
+bool clearFailedExtraction();
+//Check for extraction failure and deal with it
+
 #endif
