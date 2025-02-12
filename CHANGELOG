@@ -1,6 +1,48 @@
 Changelog for Tutorial1 - (cl)2025 Eric Clothier [shane87@github]
 
 Author: Eric Clothier <eric.clothier@gmail.com>
+Date:   Tue Feb 11 21:51:10 2025 -0500
+
+    clean up check for divide by zero
+
+    add function checkForZero(int b)
+    checkForZero(int b):
+        check if b == 0, if so, remind user they can't divide by zero
+
+    use checkForZero(int b) to make further test for proper input on
+    division and modulo cases
+
+Author: Eric Clothier <eric.clothier@gmail.com>
+Date:   Tue Feb 11 21:24:57 2025 -0500
+
+    add error checking on <std::>cin extractions
+
+    add two functions, ignoreLine() and clearFailedExtraction()
+    ignoreLine():
+        clears any extraneous input after extracting from
+        <std::>cin - i.e. user entered "6 8 7" when prompted
+        for a single integer
+    clearFailedExtraction():
+        checks for an extraction failure and, if found, clears
+        fail mode from <std::>cin, and clears input buffer using
+        ignoreLine(); terminates program immediately on entry of
+        'EOF' character; returns <true> if extraction failed,
+        <false> for extraction success
+
+    test extraction status after menu selection input, prompt for
+    retry on failure
+
+    test for extraction failure after all operand inputs, prompt
+    for retyr on failure
+
+Author: Eric Clothier <eric.clothier@gmail.com>
+Date:   Tue Feb 11 21:23:10 2025 -0500
+
+    update .gitignore
+
+    update .gitignore file to ignore build artefacts from make
+
+Author: Eric Clothier <eric.clothier@gmail.com>
 Date:   Sun Jan 26 15:00:41 2025 -0500
 
     add CHANGELOG
