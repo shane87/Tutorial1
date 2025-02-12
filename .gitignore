@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Ignore files built by make
+Tutorial1/*.o
+Tutorial1/Tutorial1
