@@ -98,11 +98,8 @@ int main()
             {
                 cout << "Please enter second number: ";
                 cin >> b;
-            } while (clearFailedExtraction());
-            if (b == 0)
-                cout << "Can't divide by zero!!" << endl;\
-            else
-                cout << a << " / " << b << " = " << divide(a, b) << endl;
+            } while (clearFailedExtraction() || checkForZero(b));
+            cout << a << " / " << b << " = " << divide(a, b) << endl;
             break;
         case 5:
             do  //wrap inputs in do { ... } while() loops...
@@ -114,11 +111,8 @@ int main()
             {
                 cout << "Please enter second number: ";
                 cin >> b;
-            } while (clearFailedExtraction());
-            if (b == 0)
-                cout << "Can't divide by zero!!" << endl; \
-            else
-                cout << a << " % " << b << " = " << modulo(a, b) << endl;
+            } while (clearFailedExtraction() || checkForZero(b));
+            cout << a << " % " << b << " = " << modulo(a, b) << endl;
             break;
         case 6:
             cout << "Goodbye!" << endl;

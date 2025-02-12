@@ -22,4 +22,7 @@ void ignoreLine();
 bool clearFailedExtraction();
 //Check for extraction failure and deal with it
 
+bool checkForZero(int b);
+//Check for division by zero
+
 #endif

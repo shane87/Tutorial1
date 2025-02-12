@@ -63,3 +63,14 @@ bool clearFailedExtraction()
     //Extraction succeeded!
     return false;
 }
+
+bool checkForZero(int b)
+{
+    if (b == 0)
+    {
+        std::cout << "Can't divide by zero!!" << std::endl;
+        return true;
+    }
+    else
+        return false;
+}
